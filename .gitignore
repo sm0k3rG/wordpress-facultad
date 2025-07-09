@@ -1,0 +1,36 @@
+# 🚫 Ignorar respaldos, backups y archivos comprimidos
+*.zip
+*.tar
+*.gz
+*.rar
+*.bak
+*.sql
+
+# 🔌 Ignorar todos los plugins, excepto Elementor y sus extensiones elegidas
+wp-content/plugins/*
+!wp-content/plugins/elementor/
+!wp-content/plugins/elementor-pro/
+!wp-content/plugins/elementor-kit-library/
+!wp-content/plugins/header-footer-elementor/
+!wp-content/plugins/premium-addons-for-elementor/
+!wp-content/plugins/royal-elementor-addons/
+
+# 🖼️ Ignorar subidas multimedia
+wp-content/uploads/
+
+# 🧹 Ignorar caché, logs y upgrade temporales
+wp-content/cache/
+wp-content/updraft/
+wp-content/upgrade/
+*.log
+
+# ⚙️ Ignorar configuraciones sensibles y archivos personales
+wp-config.php
+.env
+.DS_Store
+Thumbs.db
+node_modules/
+
+# 🧪 Ignorar herramientas de desarrollo locales
+.vscode/
+.idea/

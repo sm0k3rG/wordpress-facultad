@@ -1,0 +1,30 @@
+# BEGIN Really Simple Security LETS ENCRYPT
+RewriteRule ^.well-known/(.*)$ - [L]
+# END Really Simple Security LETS ENCRYPT
+
+# Begin Really Simple Security
+<IfModule mod_rewrite.c>
+RewriteEngine on
+#RewriteCond %{HTTPS} !=on [NC]
+#RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+Options -Indexes
+# End Really Simple Security
+
+# BEGIN WordPress
+# Las directivas (líneas) entre "BEGIN WordPress" y "END WordPress" son
+# generados dinámicamente, y sólo deben ser modificados a través de los filtros de WordPress.
+# Cualquier cambio en las directivas entre estos marcadores se sobrescribirá.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /public_html/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /public_html/index.php [L]
+</IfModule>
+
+# END WordPress

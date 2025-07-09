@@ -1,0 +1,53 @@
+# Translation of Plugins - Disable WP REST API - Stable (latest release) in Spanish (Chile)
+# This file is distributed under the same license as the Plugins - Disable WP REST API - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-10-31 17:06:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es_CL\n"
+"Project-Id-Version: Plugins - Disable WP REST API - Stable (latest release)\n"
+
+#: disable-wp-rest-api.php:133
+msgid "Rate this plugin"
+msgstr "Califica este plugin"
+
+#: disable-wp-rest-api.php:127
+msgid "Homepage"
+msgstr "Inicio"
+
+#: disable-wp-rest-api.php:126
+msgid "Plugin Homepage"
+msgstr "Página principal del plugin"
+
+#: disable-wp-rest-api.php:54
+msgid "REST API restricted to authenticated users."
+msgstr "REST API solo para usuarios autenticados."
+
+#. Author URI of the plugin
+#: disable-wp-rest-api.php
+msgid "https://plugin-planet.com/"
+msgstr "https://plugin-planet.com/"
+
+#. Author of the plugin
+#: disable-wp-rest-api.php
+msgid "Jeff Starr"
+msgstr "Jeff Starr"
+
+#. Description of the plugin
+#: disable-wp-rest-api.php
+msgid "Disables the WP REST API for visitors not logged into WordPress."
+msgstr "Desactiva la API WP REST a usuarios no autenticados en WordPress."
+
+#. Plugin URI of the plugin
+#: disable-wp-rest-api.php
+msgid "https://perishablepress.com/disable-wp-rest-api/"
+msgstr "https://perishablepress.com/disable-wp-rest-api/"
+
+#. Plugin Name of the plugin
+#: disable-wp-rest-api.php
+msgid "Disable WP REST API"
+msgstr "Desactivar WP REST API"
